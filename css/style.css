@@ -409,16 +409,77 @@ nav.close ~ .dashboard .top{
     }
 }
 
+/* Index Page */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+  }
+  .flex-item-l {
+    flex: 50%;
+  }
+  
+  .flex-item-r {
+    flex: 50%;
+  }
+  
+.chart-section .invitation img{
+    padding: 20px;
+    width: 120px;
+    border-radius: 50%;
+}
+
 @media (max-width: 780px) {
     .dash-content .boxes .box{
         width: calc(100% / 2 - 15px);
         margin-top: 15px;
     }
+    .dashboard .top button{
+        width: 70px;
+        font-size: 8px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+        height: 40px;
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+    }
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+      }
+    .flex-item-r, .flex-item-l {
+        flex: 100%;
+    }  
 }
 @media (max-width: 560px) {
     .dash-content .boxes .box{
         width: 100% ;
     }
+    .dashboard .top button{
+        width: 70px;
+        font-size: 8px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 10px;
+        height: 40px;
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+    }
+    .flex-item-right, .flex-item-left {
+        flex: 100%;
+      }
 }
 @media (max-width: 400px) {
     nav{
@@ -512,7 +573,7 @@ a:hover i {
     margin-bottom: 10px;
 }
 .chart-section .line-chart{
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;

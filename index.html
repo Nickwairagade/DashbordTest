@@ -97,7 +97,7 @@
                             </div>
                         </a>
                         <span class="text">Today's Money</span>
-                        <span class="number">$120</span>
+                        
                     </div>
                     <div class="box box2">
                         <a class="link comments">
@@ -106,7 +106,7 @@
                             </div>
                         </a>
                         <p class="text">Today's Users</p>
-                        <span class="number">120</span>
+                        
                     </div>
                     <div class="box box3">
                         <a class="link share">
@@ -115,7 +115,7 @@
                             </div>
                         </a>
                         <span class="text">Total Share</span>
-                        <span class="number">120</span>
+                        
                     </div>
                 </div>
             </div>
@@ -125,60 +125,33 @@
                     <span class="text">Recent Activity</span>
                 </div>
             </div>
-            <div class="chart-section row">
-                <div class="chart col-md-6">
-                    <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+            <div class="chart-section flex-container">
+                <div class="chart flex-item-left">
+                    <div id='myDiv' style="height: 400px; width: 100%;"><!-- Plotly chart will be drawn inside this DIV --></div>
                     <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
                 </div>
-                <div class="line-chart">
+                <div class="chart flex-item-right">
                     <div class="multi-line">
-                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                        <div id="chartContainer" style="height: 400px; width: 100%;"></div>
                         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
                     </div>
+                </div>
+            </div>
+            <div class="chart-section flex-container">
+                <div class="chart flex-item-l">
+                    <div id="container" style="height: 300px;width: 100%;"></div>
+                    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+                    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+                </div>
+                <div class="chart flex-item-r">
                     <div class="pie-chart" style="text-align: center;">
-                        <!-- <div><img src="images/img2.png" alt=""></div> -->
-                        <i class= "uil-envelope-open text-lg opacity-10" aria-hidden="true"></i>
+                        <div class="invitation"><img src="images/profile.jpg" alt=""></div>
+                        <!-- <i class= "uil-envelope-open text-lg opacity-10" aria-hidden="true"></i> -->
                         <h1>Invite Customers and <br> $10 for each</h1>
                         <div>
                             <button class="btn-hover color-1">SEND INVITATION</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="activity">
-                <div class="title">
-                    <i class="uil-dollar-sign"></i>
-                    <span class="text">Transactions Activity</span>
-                </div>
-                <div class="boxes">
-                    <div class="box box1">
-                        <a class="link thumbs">
-                            <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                <i class="uil-arrow-down text-lg opacity-10" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <span class="text">May Buy</span>
-                        <span class="number">$120</span>
-                    </div>
-                    <div class="box box2">
-                        <a class="link comments">
-                            <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                <i class="uil-arrow-down text-lg opacity-10" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <p class="text">May Sell</p>
-                        <span class="number">$120</span>
-                    </div>
-                    <div class="box box3">
-                        <a class="link share">
-                            <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                                <i class="uil-arrow-down text-lg opacity-10" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <span class="text">Apr Sell</span>
-                        <span class="number">$120</span>
-                    </div>
-                    
                 </div>
             </div>
         </div>

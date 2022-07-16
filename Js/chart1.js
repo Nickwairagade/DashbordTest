@@ -1,28 +1,27 @@
-window.onload = function () {
+anychart.onDocumentReady(function() {
 
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title:{
-            text: "Email Categories",
-            horizontalAlign: "left"
-        },
-        data: [{
-            type: "doughnut",
-            startAngle: 60,
-            //innerRadius: 60,
-            indexLabelFontSize: 17,
-            indexLabel: "{label} - #percent%",
-            toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-            dataPoints: [
-                { y: 67, label: "Inbox" },
-                { y: 28, label: "Archives" },
-                { y: 10, label: "Labels" },
-                { y: 7, label: "Drafts"},
-                { y: 15, label: "Trash"},
-                { y: 6, label: "Spam"}
-            ]
-        }]
-    });
-    chart.render();
-    
-    }
+    // set the data
+    var data = [
+        {x: "White", value: 223553265},
+        {x: "Black or African American", value: 38929319},
+        {x: "American Indian and Alaska Native", value: 2932248},
+        {x: "Asian", value: 14674252},
+        {x: "Native Hawaiian and Other Pacific Islander", value: 540013},
+        {x: "Some Other Race", value: 19107368},
+        {x: "Two or More Races", value: 9009073}
+    ];
+  
+    // create the chart
+    var chart = anychart.pie();
+  
+    // set the chart title
+    chart.title("Transaction Status");
+  
+    // add the data
+    chart.data(data);
+  
+    // display the chart in the container
+    chart.container('container');
+    chart.draw();
+  
+  });
