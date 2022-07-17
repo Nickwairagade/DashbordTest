@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <!--=== Coding by CodingLab | www.codinglabweb.com === -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="css/style.css">
-     
+
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <title>Admin Dashboard Panel</title> 
+    <title>Admin Dashboard Panel</title>
 </head>
+
 <body>
     <nav>
         <div class="logo-name">
@@ -27,47 +29,47 @@
         <div class="menu-items">
             <ul class="nav-links">
                 <li><a href="#">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
-                </a></li>
+                        <i class="uil uil-estate"></i>
+                        <span class="link-name">Dahsboard</span>
+                    </a></li>
                 <li><a href="#">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Content</span>
-                </a></li>
+                        <i class="uil uil-files-landscapes"></i>
+                        <span class="link-name">Content</span>
+                    </a></li>
                 <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
-                </a></li>
+                        <i class="uil uil-chart"></i>
+                        <span class="link-name">Analytics</span>
+                    </a></li>
                 <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
-                </a></li>
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="link-name">Like</span>
+                    </a></li>
                 <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
-                </a></li>
+                        <i class="uil uil-comments"></i>
+                        <span class="link-name">Comment</span>
+                    </a></li>
                 <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
-                </a></li>
+                        <i class="uil uil-share"></i>
+                        <span class="link-name">Share</span>
+                    </a></li>
             </ul>
-            
+
             <ul class="logout-mode">
                 <li><a href="#">
-                    <i class="uil uil-signout"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a></li>
 
                 <li class="mode">
                     <a href="#">
                         <i class="uil uil-moon"></i>
-                    <span class="link-name">Dark Mode</span>
-                </a>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
 
-                <div class="mode-toggle">
-                  <span class="switch"></span>
-                </div>
-            </li>
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -97,7 +99,7 @@
                             </div>
                         </a>
                         <span class="text">Today's Money</span>
-                        
+
                     </div>
                     <div class="box box2">
                         <a class="link comments">
@@ -106,7 +108,7 @@
                             </div>
                         </a>
                         <p class="text">Today's Users</p>
-                        
+
                     </div>
                     <div class="box box3">
                         <a class="link share">
@@ -115,7 +117,7 @@
                             </div>
                         </a>
                         <span class="text">Total Share</span>
-                        
+
                     </div>
                 </div>
             </div>
@@ -127,7 +129,9 @@
             </div>
             <div class="chart-section flex-container">
                 <div class="chart flex-item-left">
-                    <div id='myDiv' style="height: 400px; width: 100%;"><!-- Plotly chart will be drawn inside this DIV --></div>
+                    <div id='myDiv' style="height: 400px; width: 100%;">
+                        <!-- Plotly chart will be drawn inside this DIV -->
+                    </div>
                     <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
                 </div>
                 <div class="chart flex-item-right">
@@ -154,6 +158,48 @@
                     </div>
                 </div>
             </div>
+            <div class="chart-section">
+                <div class="chart table-section">
+                    <table>
+                        <caption>Statement Summary</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Account</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Account">Visa - 3412</td>
+                                <td data-label="Due Date">04/01/2016</td>
+                                <td data-label="Amount">$1,190</td>
+                                <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Account">Visa - 6076</td>
+                                <td data-label="Due Date">03/01/2016</td>
+                                <td data-label="Amount">$2,443</td>
+                                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Account">Corporate AMEX</td>
+                                <td data-label="Due Date">03/01/2016</td>
+                                <td data-label="Amount">$1,181</td>
+                                <td data-label="Period">02/01/2016 - 02/29/2016</td>
+                            </tr>
+                            <tr>
+                                <td scope="row" data-label="Acount">Visa - 3412</td>
+                                <td data-label="Due Date">02/01/2016</td>
+                                <td data-label="Amount">$842</td>
+                                <td data-label="Period">01/01/2016 - 01/31/2016</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
         </div>
     </section>
 
@@ -163,4 +209,5 @@
     <script src="Js/chart3.js"></script>
 
 </body>
+
 </html>
